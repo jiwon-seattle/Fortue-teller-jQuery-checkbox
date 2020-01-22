@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fortune survey</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Fortune Teller</h1>
+        <h4>Dear user:</h4>
+        <h4>Below you will take a survey determining your level of luck. </h4>
+        <h4>After this, A good advice will be provided. :)</h4>
+        <h4 style="color:blue"><strong>Please Check all that apply.</strong></h4>
+      </div>
+      <form id="fortune_survey">
+        <div class="form-group" id="negativeAffects_survey">
+          <p>Select all the negative luck instances you've encountered.</p>
+          <input type="checkbox" name="negativeAffects" value="-1">Seeing a black cat<br>
+          <input type="checkbox" name="negativeAffects" value="-4">Encountering the number 4<br>
+          <input type="checkbox" name="negativeAffects" value="-1">Breaking a mirror<br>
+          <input type="checkbox" name="negativeAffects" value="-1">Wearing purple at a wedding<br>
+          <input type="checkbox" name="negativeAffects" value="-2">have seen your name written in red ink<br>
+          <input type="checkbox" name="negativeAffects" value="-1">Washes hair frequently<br>
+          
+        </div>
+        <div class="form-group" id="symptoms_survey">
+          <p>Signs of good luck you have encountered.</p>
+          <input type="checkbox" name="positive" value="5">Seen the number 7 frequently<br>
+          <input type="checkbox" name="positive" value="4">Dream of pigs<br>
+          <input type="checkbox" name="positive" value="2">Hang a horse shoe above the door<br>
+          <input type="checkbox" name="positive" value="2">Four-leaf clover<br>
+          <input type="checkbox" name="positive" value="5">Saw a unicorn!<br>
+          <input type="checkbox" name="positive" value="1">have a bird poop on you(seattle)<br>
+        </div>
+
+        
+       <button type="submit">Submit Survey</button>
+      </form>
+      <span id="extreme">
+        <p><b>Very Unlucky</b></p>
+       <img src= "https://www.dictionary.com/e/wp-content/uploads/2018/06/grim-reaper1.jpg" height="250" width="250">
+      </span>
+      <br>
+      <span id="medium">
+        <p><b>Sometimes lucky, but some bad luck too.</b></p>
+        <img src="https://image.shutterstock.com/image-vector/balance-scale-icon-symbol-justice-260nw-1116400580.jpg" height="250" width="250">
+      </span>
+      <span id="low">
+        <p><b>insanely lucky</b></p>
+        <img src="https://img.pixers.pics/pho_wat(s3:700/FO/50/32/96/97/700_FO50329697_7776cac97feb629def346cd71ac58411.jpg,612,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,392,650,jpg)/stickers-leprechaun-cartoon-waving-hand.jpg" height="250" width="250">
+      </span>
+    </div>
+  </body>
+</html>
